@@ -5,7 +5,7 @@
 }
 .container{
     width:100%;
-    height:100vh;
+    height:600px;
     display: flex;
     align-items:center;
     justify-content:center;
@@ -13,11 +13,11 @@
 }
 .calculator{
     background:#999999;
-    height:90%;
+    height:100%;
     padding:35px;
     border-radius:20px;
 }
-.calculator input {
+.calculator button {
     width:60px;
     height:60px;
     border-radius: 10px;
@@ -34,17 +34,15 @@
     margin:20px 0;
     background: white;
     border-radius:10px;
-    
-}
-.display-area input{
     text-align:right;
     flex:1;
     font-size:45px;
     box-shadow:none;
     border:none;
     color:black;
-
+    height:75px;
+    
 }
-form input.equals{
+button.equals{
     width:145px;
 }

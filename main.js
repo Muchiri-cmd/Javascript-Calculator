@@ -6,16 +6,16 @@ const equals=document.getElementById('equals');
 
 //add event listeners
 buttons.forEach(function(button){
-    button.addEventListener('click',()=>{
-        display.value +=button.value;
+    button.addEventListener('click',function(e){
+        display.textContent+=e.target.textContent;
     })
 });
 cls.addEventListener('click',()=>{
-    display.value='';
+    display.textContent='';
 });
 del.addEventListener('click',()=>{
-    display.value = display.value.toString().slice(0,-1) 
+    display.textContent = display.textContent.slice(0,-1) 
 });
 equals.addEventListener('click',()=>{
-    display.value = eval(display.value)
+    display.textContent = eval(display.textContent)
 })
